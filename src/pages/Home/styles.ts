@@ -12,6 +12,8 @@ export const Header = styled.View`
   align-items: center;
   width: 100%;
   flex:1;
+  position: relative;
+  top: 60px;
 `;
 
 export const Titulo = styled.Text`
@@ -34,6 +36,7 @@ export const ButtonContainer = styled.View`
   justify-content: center;
   align-items: center;
   bottom: 40px;
+
 `;
 
 export const Button = styled.TouchableOpacity`
@@ -42,6 +45,7 @@ export const Button = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  margin-top: 15px;
 
   background-color: ${({theme}) => theme.colors.button};
 `;

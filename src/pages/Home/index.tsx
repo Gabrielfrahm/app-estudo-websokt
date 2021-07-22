@@ -25,6 +25,8 @@ export function Home() {
     navigation.navigate('Room', { id: uuid})
   }
 
+
+
   return (
     <Container>
       <Header>
@@ -32,11 +34,10 @@ export function Home() {
         <SubTitulo>Ao app de estudo sobre websocket</SubTitulo>
         <SubTitulo style={{color: 'grey', fontSize: 12}}>(um pequeno projeto de um chat)</SubTitulo>
         <LottieView 
-        source={require('../../assets/lottie/63029-chatting-couple-animation.json')}
+        source={require('../../assets/lottie/lf30_editor_px8yaoom.json')}
         style={{
-          top: 20,
           width: '100%',
-          height: '70%',
+          height: '65%',
           justifyContent: 'center',
           alignItems: 'center'
         }}
@@ -47,6 +48,9 @@ export function Home() {
       <ButtonContainer>
         <Button disabled={loading} onPress={handleCreateRoom} >
           <ButtonText>Criar sala</ButtonText>
+        </Button>
+        <Button style={{backgroundColor: '#fff'}} disabled={loading} onPress={() => navigation.navigate('SelectRoom')} >
+          <ButtonText style={{ color: '#2F6092'}}>Entrar em uma sala</ButtonText>
         </Button>
       </ButtonContainer>
     </Container>

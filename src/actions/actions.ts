@@ -8,6 +8,10 @@ export const ROOM_CREATE = async () => {
   return axios.post('/rooms');
 };
 
+export const LIST_ROOM = async () => {
+  return axios.get('/rooms');
+};
+
 export const ROOM_FETCH = async (id: string) => {
   return axios.get(`/rooms/${id}`);
 };
